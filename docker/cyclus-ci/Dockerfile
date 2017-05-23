@@ -8,5 +8,5 @@ RUN ln -s /root/.local/bin/cyclus /usr/bin/cyclus_exec
 RUN mkdir /usr/lib/cyclus
 RUN ln -s /root/.local/lib/cyclus/* /usr/lib/cyclus
 RUN ln -s /root/.local/lib/libcyclus.so /usr/lib
-RUN ln -s /usr/lib/* /usr/bin
+RUN ln -s /usr/lib/liblapack.so.3 /usr/bin/liblapack.so.3
 
