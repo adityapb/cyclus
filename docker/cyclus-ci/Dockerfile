@@ -2,6 +2,6 @@ FROM cyclus/cyclus-deps
 
 COPY . /cyclus
 WORKDIR /cyclus
-ENV PATH="/usr/bin:/usr/lib:${PATH}"
+ENV PATH="/usr/bin:/usr/lib:/usr/lib/lapack:${PATH}"
 RUN python install.py -j2 --build-type=Release --core-version 999999.999999 --prefix /usr/
 
