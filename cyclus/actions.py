@@ -10,7 +10,6 @@ import json
 from functools import wraps
 from collections.abc import Set, Sequence
 
-from cyclus.lazyasd import lazyobject
 from cyclus.system import asyncio
 from cyclus import lib
 from cyclus.jsoncpp import FastWriter
